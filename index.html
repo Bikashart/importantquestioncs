@@ -57,6 +57,7 @@
        font-weight:bold;
        opacity:0.7;
        letter-spacing:0.8px;
+        box-shadow:0.5px 0.5px 8px grey;
       
     
     }
@@ -115,7 +116,19 @@
        box-shadow: #3c4fe0 0 3px 7px inset;
        transform: translateY(2px);
     }
-   
+    .imgsec{
+       border:none;
+       border-radius:15px;
+       padding:6px;
+       margin:4px;
+       align-items:center;
+       justify-content:center;
+      
+    }
+    li{
+       padding:24px;
+    }
+
 </style>
 
 <body>
@@ -131,17 +144,65 @@
        <p class="syntax-section"><b>Syntax for declaring objects : </b><br>
        ClassName objectName;</p></p>
        <li>3. what is stream in c++?</li>
-       <p class="answers-section"></p>
+       <p class="answers-section">A stream refers to a sequence of characters that are transferred between the program and input/output (I/O) devices. 
+         To use streams in C++, you need to include the appropriate header file. For instance, to use input/output streams, you would include the iostream header file. This library provides the necessary functions and classes to work with streams, enabling you to read and write data to and from files and other I/O devices.</p>
        <li> 4. What is function ?</li>
        <p class="answers-section"> A function is a reusable block of code that performs a specific task. It can be called multiple times in a program. Every c++ program has at least one function that is main(). Functions are used to break down complex problems into smaller, more manageable subproblems, which makes the code easier to understand, maintain, and debug.<br> <p class="syntax-section"><b>Syntax for defining a function : </b><br>
        Return_type Function_name(paramenter_list){<br>
        // blocks of code to be executed<br>};</p></p></p>
        <li>5. What is file ?</li>
-       <p class="answers-section"></p>
+       <p class="answers-section">A file is a collection of data stored on a secondary storage device. It can be used to hold information that can be accessed and manipulated by a program. Files are essential for input and output operations in C++ to interact with the external world, such as reading data from or writing data to storage media like a hard disk or a USB drive.  C++ provides a set of file handling features through the standard library, specifically the "fstream" library, to work with files. <br>
+          The "fstream" library provides three main classes for file handling:<br>
+         ifstream (input file stream): This class is used to read data from files. It provides methods to open a file for reading and extract data from it.<br>
+         ofstream (output file stream): This class is used to write data to files. It provides methods to open a file for writing and insert data into it.<br>
+        fstream (file stream): This class is a combination of both "ifstream" and "ofstream" and supports both reading and writing operations on a file.<br>
+       
+        To use file handling in C++, you need to include the <fstream> header file. </p>
        <li> 6. Write the features of object oriented programming in c++ ?</li>
-       <p class="answers-section"></p>
+       <p class="answers-section">The features of object oriented programming are :<br>
+       1. class :<br> A class is a user defined data types , which holds its own data members and member function that can be accessed and used by creating the instance of that class .A class is defined in C++ using the keyword class followed by the name of the class. The body of the class is defined inside the curly brackets and terminated by a semicolon at the end.  <br><div>
+      <p class="syntax-section"><b>Syntax for defining class : </b><br>
+      Class ClassName{<br>
+      // access specifier:<br>
+      // Data members;<br>
+      // Member function(){}<br>
+      };</p></div>
+       <p class="answers-section">2. Objects : <br>An object is an instance of a class. It is a real variable or entity that exists in memory and can be used to access the member variables and member functions defined in the class.When a class is defined no memory is allocated, but when an object is created memory is allocated. To use data and its member function we can declare objects. <br>
+        <p class="syntax-section"><b>Syntax for declaring objects : </b><br>
+           ClassName objectName;</p>
+       <p class="answers-section">3. Encapsulation :<br>Encapsulation refers to the bundling of data and methods that operates on that data into a single unit called a class. It hides an internal details of an object and provides a public interface to intract with it. Encapsulation ensures data integrety and protect it from unwanted access. <br>
+       <p class="answers-section">4. Abstraction :<br>Data abstraction is one of the most essential and important features of object oriented programming in c++. Abstraction means displaying only essential information and hiding the details . Data abstraction refers to providing only essential information about  the data to the outside world ,  hiding the background details or implementation.<br>
+              <p class="answers-section">5. Polymorphism :<br>
+              <p class="answers-section">6. Inheritance :<br>The capability of the class to derive properties and characteristic from another class is called inheritance. It is a features of a process in which new classes are created from the existiong classes . The new class created is called derived class and the existing class is called base class <br>
+              There are five types of inheritance :<br>
+              1. single inheritance<br>
+              2. multiple inheritance <br>
+              3. multilevel inheritance<br>
+              4. hierarchical inheritance<br>
+              5. hybrid inheritance <br><br>
+              <p class="answers-section">7. Dynamic binding :<br>
+              
+              <p class="answers-section">8. Message passing : <br>
+              Message passing in C++ is the method of communication between two or more objects. A message is used to communicate with other objects by invoking the function of other objects.</p>
        <li> 7. What are stream class ?</li>
-       <p class="answers-section"></p>
+       <p class="answers-section">Stream classes in C++ facilitate input and output operations on files and other I/O devices. These classes have specific features to handle program input and output, making it easier to write portable code that can be used across multiple platforms.<br>
+       
+       To use streams in C++, you need to include the appropriate header file. For instance, to use input/output streams, you would include the iostream header file. This library provides the necessary functions and classes to work with streams, enabling you to read and write data to and from files and other I/O devices.<br>
+       The main stream classes in C++ are:<br><br>
+       
+       1. istream (input stream): <br>This class is used for input operations. It allows reading data from various sources, such as files, keyboard input, etc.<br><br>
+       
+       2. ostream (output stream):<br> This class is used for output operations. It allows writing data to various destinations, such as files, console output, etc.<br><br>
+       
+       3. iostream:<br> This class is a combination of both "istream" and "ostream" classes, enabling both input and output operations on the same stream object.<br><br>
+       
+       4. ifstream (input file stream):<br> This class is derived from "istream" and specifically designed for reading data from files.<br><br>
+       
+       5. ofstream (output file stream):<br> This class is derived from "ostream" and specifically designed for writing data to files.<br><br>
+       
+       6. stringstream:<br> This class is derived from "iostream" and operates on strings in memory. It allows treating a string as a stream, enabling input and output operations.<br><br>
+       
+       These stream classes work with stream objects, which are instances of the respective classes. Stream objects are used to interact with various data sources and perform input and output operations using the insertion (<<) and extraction (>>) operators.</p>
     </ol>
  </section>
  <header class="header">
@@ -149,18 +210,47 @@
  </header>
  <section class="body-section2">
     <ol type="1">
-       <li>1. What is data structure ?</li>
-       <p class="answers-section">
+       <li>1. What are data structure ?</li>
+       <p class="answers-section">A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.It is not only used for organizing the data. It is also used for processing, retrieving, and storing data.<br>
+       <img class="imgsec" srcset="/ClassificationofDataStructure-660x347.jpg" src="/ClassificationofDataStructure-660x347.jpg" alt="/ClassificationofDataStructure-660x347.jpg">
        </p>
        <li>2. What are linkedlist ?</li>
-       <p class="answers-section"></p>
-       <li>3. what are trees ?</li>
-       <p class="answers-section"></p>
-       <li>4. What is dynamic memory allocation ?</li>
-       <p class="answers-section"></p>
-       <li>5. What is spare matrix ?</li>
-       <p class="answers-section"></p>
+       <p class="answers-section">A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.The elements in a linked list are linked using pointers. <br> 
+       In simple words,  A linked list is a collection of “nodes” connected together via links.  In the case of arrays, the size is limited to the definition, but in linked lists, there is no defined size. Any amount of data can be stored in it and can be deleted from it.<br>
        
+       There are three types of linked lists − <br>
+       
+       Singly Linked List − <br>
+       
+       Doubly Linked List − <br>
+       
+       Circular Linked List −<br> </p>
+       <li>3. what are trees ?</li>
+       <p class="answers-section">A tree is a non-linear abstract data type with a hierarchy-based structure. It consists of nodes (where the data is stored) that are connected via links. The tree data structure stems from a single node called a root node and has subtrees connected to the root.<br>There are three types of trees −<br>
+       
+       1. General Trees<br>
+       
+       2. Binary Trees<br>
+       
+       3. Binary Search Trees<br></p>
+       <li>4. What is dynamic memory allocation ?</li>
+       <p class="answers-section"> The process by which storage or memory space allocated to the  variable during the runtime of a program is called dynamic memory allocation.
+       Memory can be allocated in two ways: static and dynamic.<br><br>
+       1 . Static allocation or compile-time allocation </b>- Static memory allocation means providing space for the variable. The size and data type of the variable is known, and it remains constant throughout the program.<br><br>
+       2 . Dynamic allocation or run-time allocation -   Dynamic memory allocation occurs during the program's execution, allowing you to allocate memory at runtime when the size or number of elements is not known in advance. This type of memory allocation is usually performed on the heap. .<br><br>
+        Dynamic memory allocation is achieved using functions like malloc, calloc, realloc (C), or new (C++). </p>
+       <li>5. What is spare matrix ?</li>
+       <p class="answers-section">Sparse matrices are those matrices that have the majority of their elements equal to zero. In other words, the sparse matrix can be defined as the matrix that has a greater number of zero elements than the non-zero elements.<br><br>
+       
+       
+       There are the following benefits of using the sparse matrix -<br><br>
+       
+       Storage - We know that a sparse matrix contains lesser non-zero elements than zero, so less memory can be used to store elements. It evaluates only the non-zero elements.<br><br>
+       
+       Computing time: In the case of searching in sparse matrix, we need to traverse only the non-zero elements rather than traversing all the sparse matrix elements. It saves computing time by logically designing a data structure traversing non-zero elements<br><br>
+       REPRESENTATION OF SPARE MATRIX( DO IT BY YOUR OWN)</p>
+       
+       </p>
        <li>6. Write different operation of linkedlist ?</li>
        <p class="answers-section"></p>
        <li>7. Write different operation of queue ?</li>
@@ -170,9 +260,9 @@
  <section class="footer-sec">
     <button class="button-29" role="button" onclick="window.print()">Download</button>
  </section>
-<script>
+ <script>
 
-// this section is about click on the question paper 
+// // this section is about click on the question paper 
    alert("Rotate your device ");
 </script>
 </body>
