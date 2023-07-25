@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Alert</title>
+</head>
+<style>
+   .body-sec{
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background-color:#87CEEB;
+      padding:20px;
+      border:none;
+      border-radius:10px;
+      color:white;
+      font-size:26px;
+      font-weight:bold;
+      letter-spacing:1px;
+      
+   }
+   p{
+      color:green;
+      background-color:white;
+      padding:6px;
+      margin:0px;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+     border-radius:10px;
+      display:flex;
+      
+   }
+   .access{
+      color:black;
+      letter-spacing:2px;
+      font-size:14px;
+      padding:4px;
+      margin:2px;
+   }
+   .input-sec{
+    color:black;
+    width:500px;
+    background-color:white;
+    padding:10px;
+    pointer:cursor;
+    margin:4px;
+   }
+   button{
+      border:none;
+      border-radius:6px;
+      padding:10px;
+      color:white;
+      background:green;
+      font-weight:bold;
+      border:1px solid green;
+   }
+</style>
+<body>
+   <div class="body-sec">
+      <h2>ENTER CODE</h2>
+      <form name="myForm">
+         <input type="number" name="uname" class="input-sec" placeholder="Enter your code">
+         <button onclick="validate()">DONE</button>
+         </form></P>
+   </div>
+   <div class="access">
+      Enter your code and press done to get all question's answer of core3 and core4.
+   </div>
+   <script>
+       function validate() {
+          var uname = document.forms["myForm"]["uname"].value;
+          
+          if (uname == "07") {
+             window.open("/impq.html");
+            alert("sucess");
+          }
+          else {
+             alert("invalid code");
+             window.open("alertpage.html");
+          }
+       }
+   </script>
+
+</body>
+
+</html>
