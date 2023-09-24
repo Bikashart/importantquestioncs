@@ -1,88 +1,755 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Alert</title>
+   <!-- this link for coding font style  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Poppins:wght@100&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Poppins:wght@100&display=swap" rel="stylesheet">
+<!--    this is icon added links  -->
+   <script src="https://kit.fontawesome.com/7234580fe1.js" crossorigin="anonymous"></script>
+   
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <title>payment</title>
 </head>
 <style>
-   .body-sec{
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      background-color:#87CEEB;
-      padding:20px;
-      border:none;
-      border-radius:10px;
-      color:white;
-      font-size:26px;
-      font-weight:bold;
-      letter-spacing:1px;
-      
-   }
-   p{
-      color:green;
-      background-color:white;
-      padding:6px;
-      margin:0px;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-     border-radius:10px;
-      display:flex;
-      
-   }
-   .access{
-      color:black;
-      letter-spacing:2px;
-      font-size:14px;
-      padding:4px;
-      margin:2px;
-   }
-   .input-sec{
-    color:black;
-    width:500px;
+body html{
+     box-sizing:border-box;
+   font-family:Helvetica, Arial, Georgia, Tahoma;
+}
+*{
+   margin:0px;
+   padding:0px;
+    box-sizing:border-box;
+   font-family:Helvetica, Arial, Georgia, Tahoma;
+   
+} 
+.header-section{
+   height:65px;
+   width:980px;
+   background:#5f259f;
+   display:flex;
+   box-sizing: box;
+}
+.header-image{
+   height:45px;
+   width:45px;
+   /* background-color:green; */
+   background-image: url("");
+   padding-left:10px;
+   margin-top:8px;
+   margin-bottom:5px;
+   margin-left:12px;
+   border-radius:10px;
+   position:relative;
+   
+}
+.header-text{
+   height:38px;
+   width:350px;
+   background-color:;
+   margin-top:6px;
+   margin-left:8px;
+   border:none;
+   border-radius:10px;
+   color:white;
+   padding:6px;
+   box-sizing:border-box;
+  font-weight:bold;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Cutive Mono', monospace;
+  font-family: 'Poppins', sans-serif;
+  text-transform:uppercase;
+  space-between:0.4px;
+  text-shadow: 1px 1px 2px black;
+  font-size:20px;
+  box-sizing:border-box;
+   
+}
+
+   
+
+
+   
+
+img{
+   width:45px;
+   height:45px;
+}
+header-qr{
+   background-color:blue;
+   height:45px;
+   width:45px;
+   /* background-color:green; */
+   
+   
+   border-radius:10px;
+ 
+   
+}
+.body-section{
+  background-color:#efe6f7;
+  background-color:;
+  margin-top:0px;
+  padding;0px;
+  height:100%;
+  width:100%; 
+  box-sizing:border-box;
+  padding:10px;
+}
+.body-section-img{
+    width:960px;
+   height:220px;
+   background-color:#ffffff;
+   /* margin-left:4px;
+   margin-right:4px; */
+   margin-top:;
+   box-sizing:border-box;
+   border-radius:4px;
+   box-shadow: 1px 1px 2px 2px  #a19da4;
+   
+   
+}
+.transation-name-section{
+   background-color:;
+   height:40px;
+   width:240px;
+   color:#212121;
+   padding-top:8px;
+   padding-left:16px;
+   font-weight:bold;
+   font-size:20px;
+   
+}
+.transation-option-section{
+   height:140px;
+   width:950px;
+   background-color:;
+   padding:10px;
+   
+   box-sizing: border-box;
+   display:flex;
+   justify-content: space-between;
+}
+.transation-option-section-inner-1{
+   background-color:#5f259f;
+   width:140px;
+   height:120px;
+ /*   margin-left:20px;
+ margin-top:10px; */
+   border-radius:8px;
+   
+   
+}
+/* this is balance div section  */
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+    display: block;
+  
+}
+.exp div {
+    display: block;
+}
+
+.exp div:target {
+    display: none;
+  
+}
+
+/* this is button css  */
+#link1{
+   margin-left:8px;
+   background-color:white;
+   padding:20px;
+   margin-top:8px;
+   border-radius:8px;
+   box-shadow: 1px 1px 2px 2px whtie;
+  background-color:#efe6f7;
+   
+}
+
+   
+/* CSS */
+.button-37 {
+   margin-left:55px;
+   margin-top:20px;
+   background-color: #13aa52;
+   border: 1px solid #13aa52;
+   border-radius: 4px;
+   box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   outline: none;
+   outline: 0;
+   padding: 10px 25px;
+   text-align: center;
+   transform: translateY(0);
+   transition: transform 150ms, box-shadow 150ms;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+    box-shadow: 1px 1px 2px 1px  #a19da4;
+    font-weight:bold;
+}
+
+.button-37:hover {
+   box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+   transform: translateY(-2px);
+}
+/* this is icon secting  */
+/* .fa-regular fa-address-card{
+   color:white;
+} */
+i{
+   color:white;
+   font-size:75px;
+   padding:25px;
+}
+/* this is button xontainer section  */
+.button-container{
+   width:300px;
+   height:250px;
+  
+   margin-left:10px;
+   padding:10px;
+    box-shadow: 1px 1px 2px 2px  #a19da4;
+     
+   
+    
+}
+.notification-section{
+   width:500px;
+   height:40px;
+   color:#c4abda;
+   background-color:20a15c;
+   margin-top:12px;
+   border:0px solid red;
+    align-items:center;
+    border-radius:10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   font-weight:bold;
+   font-size:26px;
+   padding:4px;
+}
+.body-section-image{
+   width: 980px;
+   height: 400px;
+   color:white;
+   background-image: 
+}
+.background-image {
+    width: 980px;
+    height: 420px;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    align-items: center;
+    justify-content:center;
+    background-size: cover;
+    animation: backgroundLoop 10s ease-in-out infinite;
+}
+
+.text-sliding-section{
+   width:980px;
+   height:32px;
+   background-color:#5f259f;
+   position:absolute;
+   margin:0px;
+   padding:10px;
+   color:white;
+   font-size:18px;
+}
+.container-main-titile{
+   box-sizing:border-box;
+   height:100px;
+   width:800px;
+   background-color:;
+   overflow:hidden;
+   display:;
+   top:380px;
+   left:170px;
+   position:absolute;
+   padding:10px;
+   align-items:center;
+   font-size:24px;
+   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9); 
+   letter-spacing:1.4px;
+}
+.container-main-titile h5{
+   padding-left:100px;
+}
+.container-main-titile1{
+   height:80px;
+   width:800px;
+   background-color:red;
+   overflow:hidden;
+   display:;
+   top:0px;
+   left:0px;
+   position:absolute;
+   overflow:hidden;
+   padding:10px;
+   align-items:center;
+   font-size:18px;
+   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9); 
+   letter-spacing:1.4px;
+}
+.designe-section-body{
+   width:980px;
+   height:120px;
+   background-color:#efe6f7;
+   border-bottom:2px solid #5f259f;
+   
+}
+.design-section-img{
+   width:75px;
+   height:75px;
+   left:205px;
+  position:absolute;
+  box-sizing:border-box;
+   /* background-color:blue; */
+   background-image:url(design.jpeg);
+   border:none;
+   background-size: cover;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   border-radius:50%;
+  top:522px;
+}
+.design-section-text{
+    width:450px;
+   height:70px;
+   left:300px;
+  position:absolute;
+  box-sizing:border-box;
+background-color:white;
+color:black;
+  
+   border:none;
+ 
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+   border-radius:10px;
+  top:522px;
+   
+}
+.design-section-text h4{
+   padding:8px;
+}
+.design-section-text h2{
+   padding-left:20px;
+   padding-top:0px;
+   letter-spacing:1.4px;
+   
+}
+
+
+
+
+/* this is unlock section */
+.unlock-container-body{
+   width:980px;
+   height:500px;
+   background-color:#efe6f7;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.unlock-inner-container{
+    width:800px;
+    height:420px;
     background-color:white;
+    
+    border-radius:10px;
+   
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+   
+     
+    
+}
+.unlock-logo-section{
+   width:510px;
+   height:250px;
+   background-color:green;
+   background-image:url(lock.jpeg);
+   background-size:cover;
+   margin-left:150px;
+   top:50px;
+   position:relative;
+   border-radius:10px;
+   
+   
+   
+   
+   
+}
+.unlock-button-section{
+   width:150px;
+   height:50px;
+   background-color:#1fa15b;
+   color:#ffffff;
+    margin-left:340px;
+    margin-top:10px;
+    border-radius:10px;
+    position:absolute;
+    overflow:hidden;
+    top:975px;
     padding:10px;
+    box-sizing:border-box;
+    font-size:34px;
+    text-align:center;
+    letter-spacing:1.3px;
+    font-weight:bold;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     pointer:cursor;
-    margin:4px;
-   }
-   button{
-      border:none;
-      border-radius:6px;
-      padding:10px;
+    
+}
+.unlock-button-section:hover:active{
+    background-color:#56d792;
+    color:white;
+    box-shadow: RGB(27, 22, 16, 0.5) 3px 3px 6px 0px inset, rgb(232, 232, 232, 0.9) -3px -3px 6px 1px inset;
+    width:154px;
+    height:52px;
+}
+.unlock-button-section:hover{
+    background-color:#41bf7b;
+    color:white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+     box-shadow: RGB(27, 22, 16, 0.5) 3px 3px 6px 0px inset, rgb(232, 232, 232, 0.9) -3px -3px 6px 1px inset;
+    
+}
+.unlock-text-section{
+   width:350px;
+   height:40px;
+   background-color:#7bc9b1;
+    margin-left:240px;
+    margin-top:10px;
+    border-radius:10px;
+    position:absolute;
+    overflow:hidden;
+    top:920px;
+    color:white;
+    padding:10px;
+    box-sizing:border-box;
+    font-size:28px;
+    text-align:center;
+    letter-spacing:1.3px;
+    font-weight:bold;
+    box-shadow: RGB(27, 22, 16, 0.5) 3px 3px 6px 0px inset, rgb(232, 232, 232, 0.9) -3px -3px 6px 1px inset;
+    
+}
+.notification-section-header{
+   width:980px;
+   height:45px;
+   background-color:#5f259f;
+   color:white;
+   padding:10px;
+   text-align:left;
+   font-weight:bold;
+   font-size:28px;
+   letter-spacing:1px;
+   padding-left:20px;
+}
+.notification-section-body{
+   width:980px;
+   height:100%;
+   background-color:#efe6f7;
+}
+.notification-list{
+   width:980px;
+   height:50px;
+   background-color:#4f84db;
+   border:2px solid white;
+   color:white;
+   padding:10px;
+   font-weight:bold;
+   font-size:22px;
+   text-shadow:RGB(27, 22, 16, 0.5) 3px 3px 6px 0px;
+}
+.notification-list:hover{
+   background-color:#2d579d;
+   border:2px solid white;
+   color:white;
+}
+.notification-list:hover:active{
+   background-color:#4f84db;
+   border:2px solid white;
+   color:white;
+    box-shadow: RGB(27, 22, 16, 0.5) 3px 3px 6px 0px inset, rgb(232, 232, 232, 0.9) -3px -3px 6px 1px inset;
+}
+.new-notification{
+   top:1160px;
+   left:870px;
+   width:60px;
+   height:30px;
+   background-color:red;
+   color:white;
+   position:absolute;
+   padding:6px;
+   text-transform:uppercase;
+   border-radius:6px;
+   border-bottom:1px solid orange;
+   border-left:1px solid yellow;
+}
+.new-notification3{
+      top:1160px;
+      left:870px;
+      width:60px;
+      height:30px;
+      background-color:red;
       color:white;
-      background:green;
-      font-weight:bold;
-      border:1px solid green;
+      position:absolute;
+      padding:6px;
+      text-transform:uppercase;
+      border-radius:6px;
+      border-bottom:1px solid orange;
+      border-left:1px solid yellow;
+}
+.new-notification2{
+      top:1210px;
+      left:870px;
+      width:60px;
+      height:30px;
+      background-color:red;
+      color:white;
+      position:absolute;
+      padding:6px;
+      text-transform:uppercase;
+      border-radius:6px;
+      border-bottom:1px solid orange;
+      border-left:1px solid yellow;
+}
+.footer-section{
+   width:980px;
+   height:40px;
+   
+   background-color:black;
+   color:white;
+   padding:10px;
+   text-align:center;
+   font-size:16px;
+   
+}
+.information-body-section{
+   width:980px;
+   height:700px;
+   background-color:#efe6f7;
+}
+@keyframes backgroundLoop {
+    0% {
+        background-image: url('mainpic.jpg');
+        filter: brightness(50%);
+    }
+    25% {
+        background-image: url('image1.jpeg');
+        filter: brightness(50%);
+    }
+    50% {
+        background-image: url('image2.jpeg');
+        filter: brightness(50%);
+    }
+    75% {
+        background-image: url('image4.jpeg');
+        filter: brightness(50%);
+    }
+    100% {
+        background-image: url('mainpic.jpg');
+        filter: brightness(50%);
+    }
+}
+
+
+@media (min-width: 768px) {
+   .button-37 {
+      padding: 10px 30px;
    }
+}
 </style>
 <body>
-   <div class="body-sec">
-      <h2>ENTER CODE</h2>
-      <form name="myForm">
-         <input type="number" name="uname" class="input-sec" placeholder="Enter your code">
-         <button onclick="validate()">DONE</button>
-         </form></P>
-   </div>
-   <div class="access">
-      Enter your code and press done to get all question's answer of core3 and core4.
-   </div>
-   <script>
-       function validate() {
-          var uname = document.forms["myForm"]["uname"].value;
+   <div class="header-section">
+       <div class="header-image">
+          <img src="csdeptlogo.png" alt="/profile logo.jpeg">
           
-          if (uname == "592") {
-             window.open("mainpage.html");
-            alert("sucess");
-          }
-          else {
-             alert("invalid code");
-             window.open("alertpage.html");
-          }
-       }
+       </div>
+       <div class="header-text">
+         CS department
+         <h6>Gunpur college , Gunpur</h6>
+            
+         </div>
+         <div class="notification-section">
+            Trace your payment using CSpay
+         </div>
+       </div>
+       <div class="header-qr">
+         
+       </div>
+      
+   </div>
+   
+   <div class="body-section">
+       <div class="body-section-image">
+          <div class="background-image"></div>
+      <div class="container-main-titile">
+         <h2>DEPARTMENT OF COMPUTER SCIENCE</h2>
+         <h5>GUNPUR COLLEGE , GUNPUR (ODISHA)</h5>
+         
+      </div>
+      <!-- <div class="container-main-title1">
+         <tt>Gunpur college , gunpur </tt>
+      </div> -->
+       </div>
+         
+   </div>
+   
+   <div class="text-sliding-section">
+      <marquee behavior="alternate" direction="left">This page do not voilets any rules and regulation of the department and college, Details provided are secured ! </marquee>
+   </div>
+   
+   <div class="designe-section-body">
+      <div class="design-section-img">
+         
+      </div>
+      <div class="design-section-text">
+         <h4>Designed by </h4>
+         <h2>VIKASH MAHANANDIA (2nd year) </h2>
+      </div>
+   </div>
+   
+   
+  <!--  this is unlock section -->
+  <div class="unlock-container-body">
+     <div class="unlock-inner-container">
+        <div class="unlock-logo-section">
+           
+        </div>
+        <div class="unlock-text-section">
+           <h4>Access Details</h4>
+        </div>
+        <div class="unlock-button-section">
+           Unlock 
+        </div>
+     </div>
+ 
+  </div>
+  
+<!--   this is notification section -->
+<div class="notification-section-header">
+    NOTIFICATION
+</div>
+<div class="notification-section-body">
+    <div class="notification-list"onclick="validate()">
+       1. Freashers Event collection +3 3rd year  
+       <div class="new-notification">
+          new
+       </div>
+    </div>
+    <div class="notification-list">
+       2. Freashers Event collection +3 2nd year
+       <div class="new-notification2">
+          new
+       </div>
+    </div>
+    <div class="notification-list">
+       3. View Teacher day celebration details  +3 2nd year
+        <div class="new-notification3">
+           new
+        </div>
+    </div>
+    <div class="notification-list">
+       3. View Farewell celebration details  +3 1st year
+        <div class="new-notification3">
+           new
+        </div>
+    </div>
+</div>
+<div class="information-body-section">
+   
+</div>
+   
+   
+   <!-- this is footer section -->
+   <footer class="footer-section">
+      © Copyright 2023 Department of computer science Gunpur, Designed and managed by Bikash Mahanandia and their group, All Right Reserved
+   </footer>
+  
+   
+  <!--  this is the body section 
+   -->
+<!-- <div class="body-section">
+   <div class="body-section-img">
+      <div class="transation-name-section">
+         Transfer Money
+      </div>
+      <div class="transation-option-section">
+         <div class="transation-option-section-inner-1">
+         <i class="fa-solid fa-address-card"></i>
+         </div>
+         <div class="exp">
+            
+         
+         <a href="#showlist">
+         <div class="transation-option-section-inner-1">
+    <i class="fa-regular fa-address-card"></i>
+         </div>
+         </a>
+         <div class="showlist">
+            hello
+         </div>
+         </div>
+         
+         <div class="transation-option-section-inner-1">
+         2
+         </div>
+        <div class="transation-option-section-inner-1">
+        3
+        </div>
+      </div>
+      
+   </div>
+</div> -->
+<!-- <button class="button-37" role="button">Check balance</button> -->
+<!-- <div class="button-container">
+   
+
+<div class="tab">
+
+   <a href="#link1"><button class="button-37" role="button">Check balance</button></a>
+   
+
+   <div id="link1">
+      0.00
+      
+   </div>
+
+</div>
+
+</div> -->
+   <script>
+     function validate() {
+              // var uname = document.forms["myForm"]["uname"].value;
+              
+              // if (uname == "592") {
+                 window.open("mainpage.html");
+                alert("sucess");
+           //    }
+           //    else {
+           //       alert("invalid code");
+           //       window.open("alertpage.html");
+           //    }
+            }  
    </script>
+
 
 </body>
 
